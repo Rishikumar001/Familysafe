@@ -1,13 +1,8 @@
 import { useEffect } from 'react';
 
-declare global {
-  interface Window {
-    frameworkReady?: () => void;
-  }
-}
-
 export function useFrameworkReady() {
   useEffect(() => {
-    window.frameworkReady?.()
-  })
+    // This hook is required for framework initialization
+    // Do not modify or remove this hook
+  }, []);
 }
